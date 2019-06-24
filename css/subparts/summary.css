@@ -1,0 +1,32 @@
+.summary {
+  margin-top: 35px;
+}
+
+.summary__text {
+  vertical-align: baseline;
+  text-align: center;
+  font-size: 18px;
+}
+
+.summary__button {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.summary__button a{
+  text-transform: uppercase;
+  border: 1px solid #cbcdcf;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 11px 17px;
+  transition: all 0.3s ease;
+}
+
+.summary__button a:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  background: inherit;
+  color: #6c757d;
+  text-decoration: none;
+  opacity: 0.95;
+  border: 1px solid #cbcdcf;
+}
