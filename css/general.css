@@ -13,3 +13,21 @@ h1, h2, h3, h4, h5 {
   color: #3d4451;
   font-weight: 700;
 }
+
+.section-title {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.section-title h1{
+  font-weight: 400;
+}
+
+.container__list {
+  margin-top: 10px;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  box-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.12),
+    0 1px 4px rgba(0, 0, 0, 0.24);
+}
