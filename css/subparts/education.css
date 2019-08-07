@@ -1,0 +1,30 @@
+.education__school{
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 10px;
+}
+
+.education__school-title {
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 5px;
+  width: 80%;
+}
+
+.education__school-years {
+  text-align: right;
+  width: 20%;
+}
+
+.education__faculty {
+  font-size: 23px;
+  margin-top: 10px;
+}
+
+.education__course span {
+  font-weight: 300;
+}
+
+.education__course {
+  font-size: 18px;
+  margin-top: 15px;
+}
