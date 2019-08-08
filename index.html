@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/fontawesome.min.css">
   <link rel="stylesheet" href="css/brands.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
 
   <link rel="stylesheet" href="css/main.css">
 
@@ -18,7 +19,7 @@
 </head>
 
 <body>
-  <header class="header" id="header">
+  <header class="header animated fadeInDown" id="header">
     <div class="container">
       <div class="row">
         <div class="col-lg-3">
@@ -55,11 +56,6 @@
                   skills
                 </a>
               </li>
-              <li class="menu__item">
-                <a href="#contacts">
-                  contacts
-                </a>
-              </li>
             </ul>
           </nav>
         </div>
@@ -67,7 +63,7 @@
     </div>
   </header>
 
-  <section class="about" id="about" name="about">
+  <section class="about animated fadeInUp" id="about" name="about">
     <div class="container">
       <div class="row profile">
         <div class="col-lg-3">
@@ -130,7 +126,7 @@
     </div>
   </section>
 
-  <section class="summary" id="summary" name="summary">
+  <section class="summary animated fadeInUp" " id="summary" name="summary">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -154,7 +150,7 @@
 
   <section class="skills" id="skills" name="skills">
     <div class="container">
-      <div class="row">
+      <div class="row animated fadeInDown">
         <div class="col-lg-12 section-title">
           <h1>Professional Skills</h1>
         </div>
@@ -284,13 +280,13 @@
 
   <section class="experience" id="experience" name="experience">
     <div class="container">
-      <div class="row">
+      <div class="row animated fadeInDown">
         <div class="col-lg-12 section-title">
           <h1>Work Experience</h1>
         </div>
       </div>
       <div class="row timeline">
-        <div class="col-12 col-sm-6 timeline__wrapper">
+        <div class="col-12 col-sm-6 timeline__wrapper animated fadeInLeft">
           <div class="timeline__item">
             <img src="img/chatforma.jpeg" alt="chatforma" class="timeline__item-section">
             <span class="timeline__item-date">Aug 2018 — Present</span>
@@ -304,7 +300,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 timeline__wrapper">
+        <div class="col-12 col-sm-6 timeline__wrapper animated fadeInRight">
           <div class="timeline__item">
             <img src="img/anagal.png" alt="anagal" class="timeline__item-section">
             <span class="timeline__item-date">Mar 2018 — Jul 2018</span>
@@ -319,7 +315,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 timeline__wrapper">
+        <div class="col-12 col-sm-6 timeline__wrapper animated fadeInLeft">
           <div class="timeline__item">
             <img src="img/xiag.png" alt="xiag" class="timeline__item-section">
             <span class="timeline__item-date">Jun 2015 — Mar 2018</span>
@@ -332,7 +328,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 timeline__wrapper">
+        <div class="col-12 col-sm-6 timeline__wrapper animated fadeInRight">
           <div class="timeline__item">
             <img src="img/tfoms.png" alt="tfoms" class="timeline__item-section">
             <span class="timeline__item-date">Mar 2011 — Jun 2015</span>
@@ -349,7 +345,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 timeline__wrapper">
+        <div class="col-12 col-sm-6 timeline__wrapper animated fadeInLeft">
           <div class="timeline__item">
             <img src="img/sibnia.png" alt="sibnia" class="timeline__item-section">
             <span class="timeline__item-date">Aug 2008 — Dec 2010</span>
@@ -365,7 +361,7 @@
     </div>
   </section>
 
-  <section class="education" id="education" name="education">
+  <section class="education animated fadeInUp" id="education" name="education">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 section-title">
@@ -393,17 +389,21 @@
     </div>
   </section>
 
-  <section class="contacts" id="contacts" name="contacts">
-    <div class="container">
-
-    </div>
-  </section>
-
   <footer class="footer" id="footer">
     <div class="container">
-
+      <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <p class="footer__text">Michael Plehanov</p>
+          </div>
+      </div>
     </div>
   </footer>
+  <script>
+    const footer = document.getElementsByClassName('footer__text')[0];
+    const date = new Date();
+    const text = footer.innerHTML;
+    footer.innerHTML = `${text} ${date.getFullYear()}`;
+  </script>
 </body>
 
 </html>
