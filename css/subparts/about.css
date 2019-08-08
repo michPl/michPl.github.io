@@ -74,3 +74,31 @@
   font-size: 33px;
   text-decoration: none'
 }
+
+@media screen and (max-width: 991px) {
+  .profile {
+    padding: 20px 10px;
+  }
+
+  .profile__photo {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .profile__title {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .about {
+    margin-top: -360px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .profile__list-item {
+    flex-direction: column;
+  }
+}
