@@ -1,0 +1,8 @@
+@import 'general.css';
+@import './subparts/header.css';
+@import './subparts/about.css';
+@import './subparts/summary.css';
+@import './subparts/skills.css';
+@import './subparts/education.css';
+@import './subparts/experience.css';
+@import './subparts/footer.css';

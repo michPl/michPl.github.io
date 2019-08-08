@@ -1,0 +1,22 @@
+.skills__item {
+  margin-bottom: 30px;
+}
+
+.skills__item-title__text {
+  text-align: left;
+  width: 80%;
+  margin-bottom: 5px;
+}
+
+.skills__item-title__value {
+  text-align: right;
+  width: 20%;
+}
+
+.skills__item .progress{
+  height: 3px;
+}
+
+.skills__item .progress-bar {
+  background-color: #4c96d7;;
+}

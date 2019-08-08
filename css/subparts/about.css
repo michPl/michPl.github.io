@@ -1,0 +1,105 @@
+.about {
+  margin-top: -450px;
+}
+
+.profile {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  box-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.12),
+    0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.profile__photo {
+  width: 100%;
+}
+
+.profile__title {
+  font-size: 36px;
+}
+
+.profile__title span {
+  font-weight: 300;
+}
+
+.profile__subtitle {
+  font-size: 18px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #dedede;
+}
+
+.profile__list {
+  padding-top: 10px;
+}
+
+.profile__list-item {
+  margin-top: 15px;
+}
+
+.profile__list-item strong {
+  margin-top: 4px;
+  display: block;
+  width: 120px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.profile__list-item span {
+  color: #545962;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.social {
+  background-color: #4c96d7;
+  padding: 20px 0;
+  box-shadow:
+    0 1px 6px rgba(0, 0, 0, 0.12),
+    0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.icons__item {
+  margin-right: 40px;
+}
+
+.icons__item a {
+  color: #ffffff;
+  font-size: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.icons__item a:hover {
+  font-size: 33px;
+  text-decoration: none'
+}
+
+@media screen and (max-width: 991px) {
+  .profile {
+    padding: 20px 10px;
+  }
+
+  .profile__photo {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .profile__title {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .about {
+    margin-top: -360px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .profile__list-item {
+    flex-direction: column;
+  }
+}

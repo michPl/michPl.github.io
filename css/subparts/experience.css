@@ -1,0 +1,152 @@
+/* CSS */
+/* Добавление отступов к элементу с классом timeline */
+.timeline {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+/* Создание вертикальной линии с помощью псевдоэлеметна */
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: .125rem;
+  height: 100%;
+  background-color: #dee2e6;
+  left: 2rem;
+  top: 0;
+}
+/* добавление нижнего отступа и левого поля для элементов с классом timeline-wrapper */
+.timeline__wrapper {
+  margin-bottom: 1rem;
+  padding-left: 4rem;
+}
+/* убирание у последнего элемента .timeline-wrapper нижнего отступа */
+.timeline__wrapper:last-child {
+  margin-bottom: 0;
+}
+/* стили для элементов таймлайна */
+.timeline__item {
+  position: relative;
+  background-color: #fff;
+  padding: .825rem;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.24));
+  box-shadow:
+
+    0 1px 4px rgba(0, 0, 0, 0.24);
+  border-top: 6px solid #4c96d7;
+}
+/* добавление контрольных точек на вертикальную линию */
+.timeline__item::before {
+  content: "";
+  position: absolute;
+  width: .75rem;
+  height: .75rem;
+  background-color: #4c96d7;
+  border-radius: .4rem;
+  left: -2.3125rem;
+  top: 30%;
+  transform: translateY(-50%);
+}
+/* добавление стрелочек к элементам таймлайна */
+.timeline__item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #fff;
+  left: -10px;
+  top: 30%;
+  transform: translateY(-50%);
+}
+/* стили для блока, в котором будет отображаться название статьи */
+.timeline__item-header {
+  display: block;
+  font-weight: bold;
+  font-size: 1.125rem;
+  text-transform: capitalize;
+}
+
+.timeline__item-role {
+  display: block;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+/* оформление блока, содержащего название раздела */
+.timeline__item-section {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  float:right;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+/* оформление блока, содержащего дату */
+.timeline__item-date {
+  display: block;
+  font-size: .75rem;
+  line-height: 2;
+  margin-top: 20px;
+}
+/* стили для блока, в который будет выводиться описание статьи */
+.timeline__item-description {
+  display: block;
+  font-size: .875rem;
+  line-height: 1.7;
+}
+/* стили для блока, содержащего ссылку "Перейти" */
+.timeline__item-link {
+  display: block;
+  font-size: .875rem;
+  line-height: 1.7;
+  text-align: right;
+}
+/* стили для ссылки "Перейти" */
+.timeline__item-link a {
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255,255,255,1);
+}
+/* стили для ссылки "Перейти" при поднесении к ней курсора или когда она находится в состоянии фокуса */
+.timeline__item-link a:hover, .timeline__item-link a:focus {
+  border-bottom: 1px dashed rgba(255,255,255,.8);
+}
+/* для адаптивности (стили для больших экранов) */
+@media (min-width: 576px) {
+  /* для вывода вертикальной линии по центру */
+  .timeline::before {
+    left: 50%;
+  }
+  /* стили для нечётных элементов с классом timeline-wrapper */
+  .timeline__wrapper:nth-child(odd) {
+    padding-right: 2rem;
+    padding-left: 15px;
+  }
+  /* стили для чётных элементов с классом timeline-wrapper */
+  .timeline__wrapper:nth-child(even) {
+    padding-left: 2rem;
+    margin-left: 50%;
+    margin-top: -2rem;
+  }
+  /* дополнительный сдвиг вверх для нечетных элементов (начиная с 3) */
+  .timeline__wrapper:nth-child(2n+3) {
+    margin-top: -2rem;
+  }
+  /* стили для псевдоэлементов ::before элементов таймлайна, расположенных в нечётных контейнерах */
+  .timeline__wrapper:nth-child(odd) .timeline__item::before {
+    right: -2.5rem;
+    left: unset;
+  }
+  /* стили для псевдоэлементов ::after элементов таймлайна, расположенных в нечётных контейнерах */
+  .timeline__wrapper:nth-child(odd) .timeline__item::after {
+    border-left: 10px solid #fff;
+    border-right: none;
+    left: unset;
+    right: -10px;
+    top: 30%;
+
+  }
+}
