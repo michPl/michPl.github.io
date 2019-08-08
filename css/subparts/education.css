@@ -8,6 +8,7 @@
   text-align: left;
   margin-bottom: 5px;
   width: 80%;
+  text-transform: capitalize;
 }
 
 .education__school-years {
@@ -18,6 +19,7 @@
 .education__faculty {
   font-size: 23px;
   margin-top: 10px;
+  text-transform: capitalize;
 }
 
 .education__course span {
@@ -27,4 +29,5 @@
 .education__course {
   font-size: 18px;
   margin-top: 15px;
+  text-transform: capitalize;
 }
