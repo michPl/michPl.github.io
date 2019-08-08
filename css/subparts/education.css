@@ -4,7 +4,7 @@
 }
 
 .education__school-title {
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
   margin-bottom: 5px;
   width: 80%;
@@ -17,7 +17,7 @@
 }
 
 .education__faculty {
-  font-size: 23px;
+  font-size: 20px;
   margin-top: 10px;
   text-transform: capitalize;
 }
@@ -27,7 +27,7 @@
 }
 
 .education__course {
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 15px;
   text-transform: capitalize;
 }
